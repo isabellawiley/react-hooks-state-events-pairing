@@ -1,5 +1,7 @@
 import React from "react";
 import video from "../data/video.js"
+import {useState} from "react";
+
 
 function Comments(){
     const commentArr = video.comments.map(commentElem => {
@@ -10,9 +12,12 @@ function Comments(){
             </div>
         )
     })
+
+    
     return(
         <div>
             <h2>{video.comments.length} Comments</h2>
+            
             {commentArr}
         </div>
     )
