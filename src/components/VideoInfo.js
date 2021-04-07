@@ -20,8 +20,8 @@ function VideoInfo({title, views, uploadDate, upvotes, downvotes}){
             <p>{views} Views | Uploaded {uploadDate}</p>
             <button onClick={upvoteClick}>{upvote}👆</button>
             <button onClick={downvoteClick}>{downvote}👇</button>
-            <br></br>
-            
+            <br/>
+            <br/>
         </div>
     )
 }
