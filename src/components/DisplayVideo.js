@@ -1,27 +1,31 @@
 import React from "react"
-import video from "../data/video.js";
-import Comments from "./Comments"
 import VideoInfo from "./VideoInfo"
+import Comments from "./Comments"
+import video from "../data/video.js"
 
-function DisplayVideo(){
-    const commentArray = video.comments
+function DisplayVideo({title, source}){
 
     return (
         <div>
             <iframe
             width="919"
             height="525"
-            src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+            src={source}
             frameborder="0"
             allowfullscreen
-            title="Thinking in React"
+            title={title}
             />
-            <VideoInfo />
+            <VideoInfo
+            title= {video.title}
+            views={video.views}
+            uploadDate={video.createdAt}
+            upvotes={video.upvotes}
+            downvotes={video.downvotes}
+             />
             <Comments />
         </div>
        
-    )
-    
+    )  
 }
 
 export default DisplayVideo;

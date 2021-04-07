@@ -1,11 +1,14 @@
-import Video from "./Video";
+import DisplayVideo from "./DisplayVideo";
+import video from "../data/video.js";
 
 function App() {
-  console.log("Here's your data:", video);
 
   return (
     <div className="App">
-      <DisplayVideo />
+      <DisplayVideo
+      title = {video.title}
+      source = {video.embedUrl}
+      />
     </div>
   );
 }
