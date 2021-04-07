@@ -5,11 +5,9 @@ import video from "../data/video.js"
 import {useState} from "react";
 
 function DisplayVideo({title, source}){
-    const [hideComment, setHideComment] = useState(false)
+    const [hideComment, setHideComment] = useState(true)
     function hideCommentClick(){
         setHideComment(!hideComment)
-        // if(hideComment)
-        // {<Comments/>}: null
     }
 
 

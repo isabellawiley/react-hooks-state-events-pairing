@@ -16,7 +16,7 @@ const video = {
       id: 2,
       user: "gaeron",
       comment: "What a great tutorial!",
-    },
+    }
   ],
 };
 
